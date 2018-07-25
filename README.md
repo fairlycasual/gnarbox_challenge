@@ -8,7 +8,7 @@ Either fork and clone this repository onto your machine, or obtain it as an npm 
 ```
 npm install --save gnarbox-challenge
 ```
-Once you have the souce code unpackaged, run 
+Once you have the source code unpackaged, run 
 ```
 npm install
 ``` 
