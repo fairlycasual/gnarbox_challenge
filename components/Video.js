@@ -6,10 +6,9 @@ import {
   WebView
 } from 'react-native';
 
-class VideoPlayer extends Component {
-  state = {
-    paused: true
-  };
+
+
+export default class VideoPlayer extends Component {
 
   render() {
     const videoWidth = Dimensions.get('window').width;
@@ -33,5 +32,3 @@ class VideoPlayer extends Component {
   }
 
 }
-
-export default VideoPlayer;

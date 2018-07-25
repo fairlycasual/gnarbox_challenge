@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import Header from './components/Header';
 import VideoPlayer from './components/Video';
 
@@ -10,12 +10,14 @@ export default class App extends Component {
       <View style={styles.headerContainer}>
         <Header />
       </View>
-      <View style={styles.videoContainer}>
-        <VideoPlayer />
-      </View>
-        <Text style={{color: 'white'}}>Hello Wilbur!</Text>
-        <Text style={{color: 'white'}}>Hello Frank!</Text>
-        <Text style={{color: 'white'}}>Hello Jobs?</Text>
+        <ScrollView style={styles.bodyContainer}>
+          <View style={styles.videoContainer}>
+              <VideoPlayer />
+          </View>
+            <Text style={{color: 'white'}}>Hello Wilbur!</Text>
+            <Text style={{color: 'white'}}>Hello Frank!</Text>
+            <Text style={{color: 'white'}}>Hello Jobs?</Text>
+        </ScrollView>
       </View>
     )
   }
@@ -27,6 +29,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgb(4,4,4)',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  bodyContainer: {
+    flex: 1,
+    top: 70,
+    paddingTop: 5,
   },
   headerContainer: {
     position: 'absolute',
