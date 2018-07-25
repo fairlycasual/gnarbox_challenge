@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Header from './components/Header';
+import VideoPlayer from './components/Video';
 
 export default class App extends Component {
   render () {
@@ -8,6 +9,9 @@ export default class App extends Component {
       <View style={styles.container}>
       <View style={styles.headerContainer}>
         <Header />
+      </View>
+      <View style={styles.videoContainer}>
+        <VideoPlayer />
       </View>
         <Text style={{color: 'white'}}>Hello Wilbur!</Text>
         <Text style={{color: 'white'}}>Hello Frank!</Text>
