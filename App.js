@@ -1,49 +1,46 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import Header from './components/Header';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
+export default class App extends Component {
+  render () {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+      <View style={styles.headerContainer}>
+        <Header />
       </View>
-    );
+        <Text style={{color: 'white'}}>Hello Wilbur!</Text>
+        <Text style={{color: 'white'}}>Hello Frank!</Text>
+        <Text style={{color: 'white'}}>Hello Jobs?</Text>
+      </View>
+    )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: 'rgb(4,4,4)',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'center',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  headerContainer: {
+    position: 'absolute',
+    flex: 1,
+    top: 0,
+    height: 72,
+    alignSelf: 'stretch',
+    paddingTop: 20,
+    paddingLeft: 12,
+    paddingRight: 12,
+    flexDirection: 'row',
+    backgroundColor: 'white'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  videoContainer: {
+    flex: 0,
+    backgroundColor: 'rgb(4,4,4)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 0
+  }
 });
