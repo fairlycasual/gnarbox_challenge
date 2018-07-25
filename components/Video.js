@@ -66,9 +66,11 @@ class MultipleVideos extends Component {
           <View style={styles.buttonContainer}>
             <Button style={styles.button}
             title="Previous Video"
+            color="white"
             onPress={this.decrementVideo}/>
             <Button style={styles.button}
             title="Next Video"
+            color="white"
             onPress={this.incrementVideo} />
           </View>
         </View>
