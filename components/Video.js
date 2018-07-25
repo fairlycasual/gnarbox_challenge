@@ -4,8 +4,7 @@ import {
   Dimensions,
   StyleSheet,
   WebView,
-  Button,
-  Alert
+  Button
 } from 'react-native';
 
 class MultipleVideos extends Component {
