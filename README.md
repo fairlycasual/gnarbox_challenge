@@ -3,12 +3,7 @@ Coding challenge for the Gnarbox organization's take home interview. The goal is
 
 ### Installing
 
-Either fork and clone this repository onto your machine, or obtain it as an npm package:
-
-```
-npm install --save gnarbox-challenge
-```
-Once you have the source code unpackaged, run 
+Fork and clone this repository onto your machine, once you have the source code unpackaged, run 
 ```
 npm install
 ``` 
