@@ -14,9 +14,7 @@ export default class App extends Component {
           <View style={styles.videoContainer}>
               <VideoPlayer />
           </View>
-            <Text style={{color: 'white'}}>Hello Wilbur!</Text>
-            <Text style={{color: 'white'}}>Hello Frank!</Text>
-            <Text style={{color: 'white'}}>Hello Jobs?</Text>
+            <Text style={{color: 'white'}}>Welcome to Gnarbox! Please find some videos pertaining to the product in this application.</Text>
         </ScrollView>
       </View>
     )
